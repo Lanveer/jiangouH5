@@ -1,0 +1,491 @@
+*{margin: 0;padding: 0;}
+body{font-family: "microsoft yahei";
+    background-color: #f2f2f2;
+    /*font-size: 1em;*/
+}
+ul>li{list-style: none}
+
+.normal-header{
+    max-width: 800px;
+    width: 100%;height: auto;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+}
+
+img{
+    max-width: 100%;width: 100%;
+    height:auto;
+}
+body{position: relative;}
+
+h1,h2,h3,h4,h5{font-weight: normal}
+a{color: #000}
+.header{
+    position: relative;
+    height: 8em;
+    width: 100%;
+    background: url("../../imgs/meishi/header-bg.png");
+    overflow: hidden;
+}
+
+.header-left{
+    width:26%;
+    height:6em;
+    margin:1em 0 1em 10pt;
+}
+.header-left>img{width: 100%;height: 100%;}
+.header-right{
+    width: 69%;
+    height:6em;
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+.header-right>h1{
+    margin:0% 0 0 3%;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+.eval{
+    width:85%;
+    overflow: hidden;
+    margin:5pt 0 0 3%;
+    position: relative;
+}
+.per-price{
+    position: absolute;right:10pt;
+    top: 20%;
+    color: #fff;font-size: 1rem;
+}
+
+
+
+
+.header-right>h2{
+    color: #fff;font-size: 1.2rem;
+    left: 3%;margin: 0;
+    position: absolute;
+    bottom:0;
+}
+.header-right>p{
+    color: #fff;font-size: 1.2rem;margin: 0;
+    position: absolute;right: 0;bottom: 0;
+}
+
+.eval>ul{padding-left:5px;overflow: hidden;margin: 0}
+.eval>ul>li{
+    display: inline-block;margin-left:-4px;
+    width: 20px;height:20px;
+
+}
+.eval>ul>li>img{width:100%;height: 100%}
+
+
+/*header over*/
+
+
+
+
+/*内容开始*/
+.content{
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+.section1{
+    width: 100%;height: auto;
+    margin-bottom: 2%;
+    border-bottom: 4px solid #ebebeb;
+}
+.intro{
+    background: #fff;
+    border-bottom: .1em solid #ebebeb;
+    margin: 0 0 0 0%;
+    padding:2% 0 2% 0%;
+    position: relative;
+}
+.intro>h1{
+    margin: 3%;font-size: 1em;
+}
+
+.wrong{
+    position: absolute;right: 3%;top: 15%;
+    width:60pt;height: 23pt;line-height: 10pt;
+    border-radius: 5px;
+    background-color: #cdeacb;color: #39bc30;
+}
+.intro-detail{
+    color: #000;font-size: 1em;
+    background: #fff;  margin: 0 0 0 2%;
+    padding:2.5% 0 5% 0%;
+}
+
+/*.content>p{font-size: 1.5em;}*/
+
+
+
+.section2{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+}
+
+
+
+.time{
+    /*border-top: 4px solid #ddd*/
+}
+.time,.add,.tel,.more-pics{
+    border-bottom: .1em solid #ebebeb;
+    padding:3% 0 4% 2%;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    margin-top: 0!important;
+
+}
+
+
+.location{width: 25px;height: 25px;margin-right: 12pt}
+.tel-number{width: 25px;height: 25px;margin-right:12pt}
+
+.more-pics{
+    border-bottom: 0!important;
+}
+.more-list0{
+    position: relative;
+   border-bottom: 4px solid #ebebeb;
+}
+.more-list{
+    width: 90%;
+    padding-left: 2%;
+    overflow: hidden;
+    margin: 0 0 .6rem;
+}
+.more-list>li:first-child{margin-left: 0%}
+.more-list>li{
+    /*width: 20%;height: auto;*/
+    width:64pt;height:64pt;
+    margin-left: 2%;float: left;
+}
+.more-list>li>img{width: 100%;height:100%;}
+.more-pics-arrow{
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    /*width: 20px;height: 40px;*/
+}
+.arrow{
+    width: 10px;height: 10px;
+}
+.arrow>img{
+
+}
+/*点评开始*/
+.comment{
+    overflow: hidden;
+    border-bottom: 4px solid #ebebeb;
+}
+
+.comment>h1{font-weight: normal;font-size: 1.5rem;padding: 5pt 0 10pt 5pt;
+border-bottom: .1em solid #ebebeb;
+}
+/*评论盒子结束*/
+
+
+
+
+/*评论展示开始*/
+.reply-show{
+    width: 85%;height: auto;
+    margin: auto;overflow: hidden;
+}
+
+.reply-show>ul{
+    /*background-color: red;*/
+    padding-left: 17%;
+    
+}
+
+.reply-show>p{
+    margin-left: 14%;
+}
+
+
+.reply-show-user{
+    color: #456d8a;
+    font-size:1em;
+}
+
+
+.reply-show-info{
+    padding-left: 1%;
+    font-size: 1em;
+}
+/*评论展示结束*/
+
+
+
+
+
+
+.visit{
+    /*font-size: 1.5em;color: #000;*/
+    background: #fff;
+    border-bottom: 4px solid #ebebeb;
+    padding:2% 0 0% 10pt;
+    position: relative;
+}
+
+.visit>a{color: #000}
+.visit>a>h1{
+    padding:0% 0 4% 2%;
+    margin-bottom: 0;
+    font-weight: normal;font-size: 1.5rem;
+    margin-top: 2%!important;
+}
+
+.error{
+    padding:3% 0 2% 2%;
+    overflow: hidden;
+}
+.error-btn{
+    margin-right: 4%;margin-bottom: 2%;
+    background-color:#cdeacb;
+    color: #6cc967;
+    border: none;outline: none;
+    border-radius: 5px;
+}
+
+/**/
+.recommend{width: 100%;
+height: auto;overflow: hidden;
+margin-bottom: 40pt;
+    padding: 5pt 0 5pt 0;
+    border-bottom: .1em solid #ebebeb;
+}
+.recommend_header{border-left: 6px solid #39bc30;width: 80%;  margin-left: 10pt;height: 2em; }
+.recommend_header>h1{font-weight: normal;font-size: 1.5rem;
+    padding: 10pt 0 10pt 10pt;line-height:.5em;}
+
+.recommend_detail{padding-left: 0;margin-top: 5pt;}
+.recommend_detail>li{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-bottom: .1em solid #ebebeb;
+    border-top: .1em solid #ebebeb;
+    padding: 10pt 0 10pt 0;
+
+}
+.recommend_detail_left{
+    width: 70pt;height: 60pt;
+    float: left;padding-left: 10pt;
+}
+.recommend_detail_left>img{
+width: 100%;height: 100%;
+}
+.recommend_detail_right{
+    width: calc(100% - 75pt);
+    float: right;height: 60pt;
+}
+.re_left{
+ width: 70%;height: 60pt;float: left;
+ position: relative;
+}
+.re_left>span{font-size:1.2rem;color: #656565;margin-top: 5pt;}
+.re_miles{margin-right: 10pt}
+.re_left>h1{
+ font-weight: normal;font-size: 1.5rem;margin: 0;
+}
+.re_eval{
+    width: 90%;height: 20px;position: relative;
+    margin-top: 5pt;
+}
+.re_eval>ul{padding-left: 0;margin: 0 0 0 3px;}
+.re_eval>ul>span{
+    position: absolute;right: 0;font-size: 1rem;color: #656565;line-height: 20px;
+}
+.re_eval>ul>li{
+    margin-left: 0px;
+    line-height: 12px;overflow: hidden;
+    width: 15px;height: 15px;display: inline-block;}
+.re_eval>ul>li>img{
+    width: 15px;height: 15px;
+}
+
+.re_right{width: 30%;height: 40pt;
+    border-left: .1em solid #ebebeb;
+    float: left; margin: 10pt 0 10pt 0;
+}
+.re_right_img{
+    width: 25px;height: 25px;
+    display: block;margin:30% auto 0;
+}
+
+/*内容结束*/
+
+
+
+/* footer begin*/
+
+.footer>ul{padding-left: 0!important;}
+.footer>ul>li{
+    display: inline-block;
+    width: 32%!important;
+    line-height: 2rem;
+}
+
+.footer>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 5rem;margin-top: 4%;
+    border-right: 1px solid #f2f2f2;
+    text-align:center;
+}
+
+
+/* footer over*/
+
+
+
+/*签到开始*/
+
+.sign-header{
+   max-width: 800px;width: 100%;
+    height: 4em;margin:0 auto 2%;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+    position: relative;
+}
+.sign-header>a{
+    position: absolute;
+    left: 0%;
+    width: 15px;height: 15px;
+}
+.sign-header>span{
+    font-size: 1.5em;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.success-tips{
+    max-width: 800px;width: 100%;
+    height: 8rem;margin:0 auto 2%;
+    background-color: #fff;
+    position: relative;
+}
+
+.success-tips>span{
+    /*text-align: center;*/
+    line-height: 9rem;
+    position: absolute;
+    left: 48%;
+    font-size: 1.1em;
+}
+.success-tips>img{
+    width: 40px;height:auto;
+    position: absolute;left: 35%;
+    top: 35%;
+}
+.sign-list{
+    max-width: 800px;width: 100%;
+    height:auto;margin: auto;
+    background-color: #fff;
+    overflow: hidden;position: relative;
+}
+
+.sign-list>h1 {
+    padding: 2% 0 2% 3%;
+    font-size: 1em;
+    border-bottom: .1em solid #ebebeb;
+}
+.sign-list>p{
+    margin-left: 0%;
+    padding:0% 0 2% 3%;
+    margin-top: 2%;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+
+}
+.sign-list-info{
+    width: 100%;padding-left: 0;
+    background-color: #fff;
+    padding-top:0!important;
+    /*margin-top: -3%;*/
+}
+.sign-list-info>li{
+    height: 6em;
+    width: 100%;
+    position: relative;
+    display: block;cursor:pointer;
+    border-bottom: .1em solid #ebebeb;
+
+}
+
+.sign-list-info>li:last-child{
+    border-bottom: none!important;
+}
+
+
+.sign-list-icon{
+    width:40px;height:40px;
+    display: block;
+    /*background-color: red;*/
+    border-radius: 50%;
+    margin: 2.5% 0 0 3%;
+}
+
+.sign-list-detail{
+    width: 65%;
+    height: 65%;
+    margin: 3% 0 0 4%;
+}
+
+
+.sign-list-detail-name{
+    font-size: 1em;
+    color: #000;
+}
+
+.sign-list-detail-data,.sign-list-detail-status{
+    font-size: .9em;
+    color: #ccc;
+}
+
+.arrow1{
+margin: 3% 3% 0 0;
+}
+
+/*签到结束*/
+
+
+
+/*点评详情开始*/
+
+
+.comment-details{
+    position: relative;
+    /*top: 5rem;*/
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*点评详情结束*/
+
+
+/*更多图片开始*/
+
+.more-pic-detail{
+    max-width: 800px;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+/*更多图片结束*/
+
+

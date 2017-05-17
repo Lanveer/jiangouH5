@@ -1,0 +1,35 @@
+.more-pic-detail{
+    max-width: 800px;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+/*.am-gallery-default .am-gallery-item img {*/
+    /*width: 100pt;*/
+    /*height: 100pt;*/
+/*}*/
+
+/*.am-active{*/
+   /*display: none;*/
+/*}*/
+
+.more-pic-detail1{
+    max-width: 800px;height: auto;
+    width: 95%;
+    margin: auto;padding-left: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.more-pic-detail1>li{
+    /*width: 100pt;height: 100pt;*/
+    width: 45%;height: auto;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    margin: 0 5% 5% 0%;
+}
+.more-pic-detail1>li img{
+    width: 100%;height:auto;
+}

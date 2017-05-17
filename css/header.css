@@ -1,0 +1,264 @@
+/* top区域开始*/
+
+.top{
+    width: 100%;
+    height:45px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2222;
+    background-color: #fff;
+    /*background-color: #ccc;*/
+    border-bottom: .1em solid #ebebeb;
+}
+.top-left{width: 20%;height: 20px;margin-top: 13px}
+.top-mid{ width: 60%;height: 30px;margin-top: 7px;}
+.top-right{ width: 20%;height: 20px;margin-top: 13px;}
+
+.back{
+    width: 12px;
+    height: 20px;margin-left: 10pt;
+    display: block;
+}
+.top-title{
+    line-height:40px!important;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2em!important;
+    color: #282828;
+}
+.share{width:20px;
+    height: 20px;
+    position: absolute;
+    right: 30pt;top: 2px;
+    cursor: pointer;
+}
+.collect{width:20px;height: 20px;
+    cursor: pointer;float: right;
+    margin: 2px 6pt 0 0;
+
+}
+.collected{
+    width:20px;height: 20px;
+    cursor: pointer;float: right;
+    margin: 2px 6pt 0 0;
+    display:none;
+}
+/* top区域结束*/
+
+
+
+
+/*大图轮播区域开始*/
+.Mask{
+    background:#000!important;
+    position:fixed;
+    opacity: 0;
+    padding-top:45px;
+    width: 100%;
+    height: 100%;
+}
+
+.Mask_close{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    width: 100%;height: 50px;
+    z-index: 1000;
+    text-align: left;
+    cursor: pointer;
+}
+.Mask_close>img{
+    width: 12px;height: 20px;
+    display: block;
+    margin:13pt 0 0 10pt;
+}
+
+/*大图轮播区域结束*/
+
+
+/*轮播*/
+.sd-play{
+    width: 100%;
+    height:25rem;
+    overflow: hidden;margin: auto;
+}
+
+
+.swiper-slide>img{
+    width: 100%;height: auto;
+}
+#small_play{width: 100%;height: 25rem}
+#small_play>.swiper-slide>img{
+    width: 100%;height:100%;
+}
+#big_play{
+    width: 100%;
+    height: 40rem;
+}
+#big_play>.swiper-slide>img{
+    width: 100%;height: auto!important;
+}
+
+
+#demo1{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    z-index: 200;
+    overflow: hidden;
+}
+
+
+
+/*轮播*/
+
+
+
+/*详情页面的footer开始*/
+.footer{
+    height: 40pt;width: 100%;
+    position: fixed;bottom: 0;
+    z-index: 999999;
+    background-color: #fff;
+}
+.footer-left{
+    width:40%;height: 50pt;
+    background-color: #39bc30;
+}
+
+.footer-left-uses{
+    padding: 5pt 0 0 10pt;color: #fff;
+    font-size: 1em;
+}
+
+.footer-left-phone{
+    padding: 0pt 0 0 10pt;color: #fff;
+    font-size: 1em;
+}
+
+.footer-right{
+    width:60%;
+    height: 50pt;
+    background-color: #fff;
+}
+.footer-right>ul{
+    padding-top:5pt;
+    margin-left: -20px;
+}
+
+.footer-right>ul>li>a{
+    float: left;
+    font-size: 1rem;
+    width: 33%;height: 30pt;
+    border-right: 1px solid #ebebeb;
+}
+
+
+
+figure>img{
+    width: 22px;height: 22px;
+    display: block;
+    margin: auto;
+}
+
+figure>figcaption{text-align: center;color: #656565;margin-top: 2px;}
+
+/*详情页面的footer结束*/
+
+
+/*包裹整个页面的container开始*/
+#container{
+    width: 100%;height: auto;
+    overflow: hidden;
+    position: absolute;
+    top:45px;
+}
+/*包裹整个页面的container结束*/
+
+
+
+/*详情页面的列表问题开始*/
+
+.sd-location{
+    width:18pt;height:14pt;
+    position: absolute;
+    right:18pt;top: 8pt;
+    z-index: 333;
+}
+.sd-arrow{
+    width: 5pt;height: 10pt;
+    position: absolute;
+    top:10pt;right: 6pt;
+    z-index: 333;
+}
+
+.sd-section2>p{
+    position: relative;
+    width: 100%;
+    font-size: 1.4rem;
+    height: 30pt;
+    padding-left: 10pt;
+    padding-top: 10pt;
+}
+.pingpai{ color: #9b9b9b;}
+
+.neirong{color: #282828;}
+
+.sd-add{
+    display: block; float:right;
+    width: 68%;
+    margin-right: 40pt;
+    overflow: hidden;
+}
+
+
+/*适配iphone5 以及更小的屏幕开始*/
+@media screen  and  (max-width: 322px){
+
+    .sd-add{
+        display: block; float:right;
+        width: 59%;
+        margin-right: 40pt;
+        overflow: hidden;
+    }
+
+
+}
+
+/*适配iphone5 以及更小的屏幕结束*/
+
+/*详情页面的列表问题结束*/
+
+
+/*未认领的时候的状态开始*/
+
+.sd-section{
+    height: auto;
+    margin-bottom:2%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.unrenling{
+    background-color: #fff;
+    position: relative;
+    height: 50pt;
+    border-bottom: 4px solid #ebebeb;
+    display: none;
+}
+
+.unrenling>h1{
+    padding-left: 15pt;
+    line-height: 50pt;
+    font-size: 1.5rem;
+    /*color: #282828;*/
+}
+
+.arrowing{
+    width: 7pt;
+    height: 10pt;
+    position: absolute;
+    top: 14pt;
+    right: 6pt;
+}
+
+/*未认领的时候的状态结束*/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>更多图片</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/more_imgs.css"/>
+
+<body>
+
+<div id="container">
+    <!--<ul data-am-widget="gallery" class="more-pic-detail am-gallery am-avg-sm-2-->
+  <!--am-avg-md-2 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }" >-->
+        <!--<li>-->
+            <!--<div class="am-gallery-item">-->
+                <!--<a href="" class="">-->
+                    <!--<img src="../imgs/basic/meishi/more-pic-1.png"  alt=""/>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</li>-->
+    <!--</ul>-->
+
+
+    <!--测试文件-->
+    <!--大图轮播-->
+    <div style="" class="Mask1">
+        <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+        <span class="Mask_title1"></span>
+        <div class="swiper-container demo" id="demo2">
+            <div class="swiper-wrapper" id="com_play"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--大图轮播-->
+
+    <!--图片列表开始-->
+    <ul class="more-pic-detail1">
+        <!--<li>-->
+            <!--<img src="../imgs/basic/meishi/more-pic-1.png"  alt=""/>-->
+        <!--</li>-->
+    </ul>
+    <!--图片列表结束-->
+
+
+
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/more_imgs.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+    $('#demo2').swiper({
+        pagination: '#demo2 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

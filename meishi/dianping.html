@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>附近美食点评页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/dianping.css"/>
+
+<body>
+
+<!--大图轮播-->
+<div style="" class="Mask1">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <span class="Mask_title1"></span>
+    <div class="swiper-container demo" id="demo2">
+        <div class="swiper-wrapper" id="com_play"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--大图轮播-->
+
+
+
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl"><a href="index.html"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" >网友点评</h1></div>
+    <div class="top-right am-fl" style="position: relative"> </div>
+</div>
+<!--header区域结束-->
+
+
+<!--评论展示开始-->
+<div id="container">
+    <!--网友点评开始-->
+    <ul id="pinglun">
+        <span style="display: none" class="nickName"></span>
+
+        <!--<li>-->
+            <!--<div class="com_header">-->
+                <!--<div class="icon_div">-->
+                    <!--<img class="am-circle" src="../imgs/basic/meishi/touxiang.png" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="user_info">-->
+                    <!--<span class="users"></span>-->
+                    <!--<div class="score">-->
+                        <!--<span>打分：</span>-->
+                        <!--<ul>-->
+                            <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="coms">-->
+                    <!--<p></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="com_body">-->
+                <!--<div class="show_imgs">-->
+                    <!--<ul>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="com_body_info">-->
+                    <!--<ul>-->
+                        <!--<li class="browse_li">浏览<span class="browse"></span></li>-->
+                        <!--<li class="comments_li">评论<span class="comments"></span></li>-->
+                        <!--<li class="rep"  onclick="do_com(this)">-->
+                            <!--<img src="../imgs/basic/meishi/rep.png" alt=""/>-->
+                            <!--回复-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;输入框开始&ndash;&gt;-->
+                <!--<div class="input_area">-->
+                    <!--<textarea name="" class="input"></textarea>-->
+                    <!--<button class="reply" onclick="reply(this)">提交</button>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;输入框结束&ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="com_footer">-->
+                <!--<span class="comment_id"></span>-->
+                <!--<ul class="com_footer_ul">-->
+                    <!--<li>-->
+                        <!--<span class="icon"><img src="../imgs/basic/meishi/msg_icon.png" alt=""/></span>-->
+                        <!--<span class="com_name"></span>-->
+                        <!--<span class="com_content"></span>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+    <!--网友点评结束-->
+</div>
+<!--评论展示结束-->
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/dianping.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo2').swiper({
+        pagination: '#demo2 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

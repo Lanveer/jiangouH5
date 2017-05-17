@@ -1,0 +1,116 @@
+body{
+    background-color: #f2f2f2!important;
+}
+
+
+
+.bg-content{
+    width: 100%;
+}
+.bg-content>h1{
+    font-weight: normal;
+    padding: 15pt 0 0 3%;
+    font-size: 12pt;
+}
+.bg-title{
+    font-weight: normal;
+    font-size: 14pt;
+    color: #656565;
+}
+
+.bg-title2,.bg-title3{
+    padding-top: 12pt;
+    color: #282828;
+}
+
+
+
+span{
+    width: 96%;margin: 15pt auto;
+    display: block;
+    line-height: 160%;
+    font-size: 9pt; color: #656565;
+    font-family: "microsoft yahei";
+}
+.bangui{
+    width: 96%;margin: auto;
+}
+.bangui >li{
+    font-size: 9pt;color: #656565;
+    margin-bottom: 10pt;
+    font-family: "microsoft yahei";line-height: 160%;
+}
+.bg-des{
+    font-size:9pt;
+    color: #656565;
+    line-height: 160%;
+    padding: 10pt 0 0 3%;
+}
+
+.form{
+    font-weight: normal;font-size: 14pt;color: #282828;
+}
+
+.primary_title{
+    padding: 15pt 0 0 3%;
+    font-weight: normal;font-size: 10pt;color: #282828;
+
+}
+.form-ul{   width: 96%;margin: auto;}
+
+
+.form-ul>li{
+    font-size: 9pt;color: #656565;
+margin-top: 10pt;
+    font-family: "microsoft yahei";line-height: 130%;
+}
+/*帮助中心开始*/
+.arrow1{
+    width: 5pt;height: 10pt;
+    position: absolute;
+    right: 6pt;
+    z-index: 333;
+}
+.content {
+    margin:10pt auto 0;
+    width:95%;
+    height: auto;
+    background-color: #fff;
+}
+
+
+.content > ul {list-style: none;padding-left: 3%}
+.content .menu-one > li {
+    width:100%; height: auto; overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.content .menu-one .header {
+    height: 42pt;
+    line-height: 42pt;
+    cursor: pointer;
+}
+.content .menu-one .header:hover,
+.content .menu-one .menuOne-current {background: #fff;}
+.content .menu-one .header > span {display: block;}
+.content .menu-one .header .txt {float: left; color: #282828;font-size: 10pt}
+.content .menu-one .header .arrow1 {
+
+    float: right; width: 18px; height: 16px;
+    background: url('../imgs/up.png') no-repeat center center;
+    margin: 15px 10pt 0 0;
+
+}
+.content .menu-two {display: none; width:100%; height: auto;
+    font-size: 9pt;color: #b4b4b4;
+    padding: 13pt 0 10pt 0;
+}
+
+.content .menu-show .header {
+    border-bottom: 1px dashed #ebebeb;
+}
+.content .menu-show .header .arrow1 {
+    margin: 15px 10pt 0 0;
+    width: 18px; height: 16px;
+    background-image: url('../imgs/down.png');}
+/*帮助中心结束*/

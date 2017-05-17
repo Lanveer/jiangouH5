@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>附近优惠</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<!--<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>-->
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/benifit.css"/>
+<body>
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title"></h1></div>
+    <div class="top-right am-fl" style="position: relative">
+        <div onclick="fenxiang()"><img class="share" src="../imgs/basic/share.png" alt=""/></div>
+        <span class="collect"></span>
+    </div>
+</div>
+<!--header区域结束-->
+
+<!--大图轮播开始-->
+<div style="" class="Mask">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <span class="Mask_title"></span>
+    <div class="swiper-container demo" id="demo1">
+        <div class="swiper-wrapper" id="big_play"></div>
+    </div>
+</div>
+<!--大图轮播结束-->
+
+<!--中间开始-->
+<div id="container" style="padding-bottom: 5rem">
+    <!--轮播区域开始-->
+    <div class="play" style="height: 235px;overflow: hidden">
+        <div class="swiper-container demo" id="demo4">
+            <div class="swiper-wrapper" id="small_play">
+                <!--<div class="swiper-slide"><img src="../imgs/basic/secondhan/play.png" alt=""/></div>-->
+                <!--<div class="swiper-slide"><img src="../imgs/basic/secondhan/play.png" alt=""/></div>-->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--轮播区域结束-->
+
+
+    <!--content begin-->
+    <div class="section section_item" style="border-bottom: .1em solid #ddd">
+        <h1 class="ben-title0"></h1>
+        <h2 class="ben-title1"></h2>
+        <p class="ben-des"></p>
+        <h1 class="ben-title2">详情</h1>
+
+
+        <ul class="list" style="margin-top:3pt;line-height: 160%;">
+            <li>
+                <span class="left-part">店名：</span>
+                <span class="shop_name right-part"></span>
+            </li>
+
+            <li>
+                <span class="left-part">电话：</span>
+                <span class="right-part"> <span class="tel-number"></span>  <span class="phone-icon" onclick="call()"><img src="../imgs/basic/tel.png" alt=""/></span></span>
+            </li>
+
+            <li>
+                <span class="left-part">地址：</span>
+                <span class="right-part">
+                    <span class="add ben_add "></span>
+                    <span class="phone-icon map" onclick="launchGoogleMap(this)"><img src="../imgs/basic/location.png" alt=""/></span>
+                    <span class="lat" style="display:none"></span>
+                    <span class="lon" style="display:none"></span>
+                </span>
+            </li>
+
+            <li>
+                <span class="left-part">网址：</span>
+                <span class="right-part shop_url"></span>
+            </li>
+        </ul>
+    </div>
+    <!--content over-->
+
+
+    <!--分享&收藏开始-->
+    <div class="ben_footer" style="border-top: .1em solid #ddd">
+        <ul>
+            <li class="footer-share">
+                <span class="icon"><img src="../imgs/basic/benifit-share.png" alt=" "/></span>
+                <h2 onclick="fenxiang()">分享 <span class="share_count"></span></h2>
+            </li>
+            <li class="footer-collect">
+                <span class="icon restore"><img src="../imgs/basic/benifit-collect.png" alt=" "/></span>
+                <h2>收藏 <span class="collect_count"></span></h2>
+            </li>
+        </ul>
+    </div>
+    <!--分享&收藏结束-->
+
+</div>
+
+<!--中间结束-->
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/benifit.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>房屋租售详情</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/house.css"/>
+<body>
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" ></h1></div>
+    <div class="top-right am-fl" style="position: relative">
+        <div onclick="fenxiang()"><img class="share" src="../imgs/basic/share.png" alt=""/></div>
+        <span class="collect"></span>
+    </div>
+</div>
+<!--header区域结束-->
+
+<!--大图轮播开始-->
+<div style="" class="Mask">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <span class="Mask_title"></span>
+    <div class="swiper-container demo" id="demo1">
+        <div class="swiper-wrapper" id="big_play"></div>
+    </div>
+</div>
+<!--大图轮播结束-->
+
+
+<!--中间部分开始-->
+<div id="container">
+    <!--轮播区域开始-->
+    <div id="play">
+        <div class="swiper-container demo" id="demo4">
+            <div class="swiper-wrapper" id="small_play">
+                <!--<div class='swiper-slide'><img src='../imgs/basic/secondhan/play.png' alt=''/></div>-->
+                <!--<div class='swiper-slide'><img src='../imgs/basic/secondhan/play.png' alt=''/></div>-->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--轮播区域结束-->
+
+    <!--详细内容开始-->
+    <div class="section">
+        <h1 class="section_title"> </h1>
+        <div style="overflow:hidden;height: 18pt;margin-top: 7pt">
+            <h1 class="section_price am-fl"></h1>
+            <div class="section_tag am-fr"> <span class="tag"></span> </div>
+        </div>
+
+        <div class="section_info">
+            <h2 class="am-fl">发布时间： <span class="release_time"></span></h2>
+            <p class="am-fr">浏览量:<span class="browse"></span></p>
+        </div>
+    </div>
+
+    <div class="section section_item">
+
+
+        <ul class="list">
+            <li>
+                <span class="left-part">楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;层:</span>
+                <span class="right-part house_floor"></span>
+            </li>
+            <li>
+                <span class="left-part">面&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积:</span>
+                <span class="right-part house_square"></span>
+            </li>
+            <li>
+                <span class="left-part">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                <span class="right-part">
+                    <span class="add address "></span>
+                    <span class="phone-icon" onclick="launchGoogleMap(this)"><img src="../imgs/basic/location.png" alt=""/></span>
+                    <span class="arrow-icon"><img src="../imgs/basic/arrow.png" alt=""/></span>
+
+                    <span class="lat" style="display:none"></span>
+                    <span class="lon" style="display:none"></span>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section_des">
+            <h1 class="section_des_title">详情描述</h1>
+        </div>
+        <p class="section_description"> </p>
+    </div>
+
+    <div class="claim section user_info_box">
+        <div class="user_info_div">
+            <img class="user_icon am-circle" src="../imgs/basic/secondhan/user.png" alt=""/>
+            <h1 class="user_name"></h1>
+        </div>
+
+        <img src="../imgs/basic/arrow.png" alt="" class="user_info_arrow"/>
+        <!--<p>他在房屋租售类别发布了 <span class="user_message"> </span> 条信息</p>-->
+        <p class="user_times"></p>
+    </div>
+
+
+    <div class="section">
+        <!--未认领时候显示的div开始-->
+        <div class="claim  unrenling">
+            <h1>认领</h1>
+            <img src="../imgs/basic/arrow.png" alt="" class="user_info_arrow"/>
+        </div>
+        <!--未认领时候显示的div结束-->
+    </div>
+
+
+    <div class="section report">
+        <h1 style="padding-top: 10pt;color: #282828">请选择当面交易，不要提前汇款</h1>
+        <h1 style="color: #fe7200;">如遇无效、虚假、咋骗信息，请立刻举报</h1>
+
+        <div class="report_div">
+            <button class="report_btn"  onclick="report()">举报</button>
+        </div>
+    </div>
+
+    <!--详细内容结束-->
+</div>
+<!--中间部分结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <div class="footer-left am-fl">
+        <h1 class="footer-left-uses"><span class="footer-left-user"></span>(<span class="tag"></span>)</h1>
+        <h1 class="footer-left-phone"></h1>
+    </div>
+    <div class="footer-right am-fr">
+        <ul>
+            <li><a class="" style="" onclick="call();"  value='call' id='call'>
+                <figure>
+                    <img src="../imgs/basic/phone.png" alt=" "/>
+                    <figcaption>电话</figcaption>
+                </figure>
+            </a></li>
+            <li><a class="" onclick="sendMsg()">
+                <figure>
+                    <img src="../imgs/basic/msg.png" alt=" "/>
+                    <figcaption>短信</figcaption>
+                </figure>
+            </a></li>
+            <li><a class=""  style="border-right: none" onclick="openChattingList()" >
+                <figure>
+                    <img src="../imgs/basic/chat.png" alt=" "/>
+                    <figcaption>聊天</figcaption>
+                </figure>
+            </a></li>
+        </ul>
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/house.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+
+</html>

@@ -1,0 +1,8 @@
+body{
+    background-color: #f2f2f2!important;
+}
+
+.list{padding-top: 5%}
+.list>li{color: #9b9b9b}
+.left-part{width: 20%;}
+.right-part{width: 78%;color: #282828}

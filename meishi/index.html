@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>附近美食详情页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<body>
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" ></h1></div>
+    <div class="top-right am-fl" style="position: relative">
+        <div onclick="fenxiang()"><img class="share" src="../imgs/basic/share.png" alt=""/></div>
+        <span class="collect"></span>
+    </div>
+</div>
+<!--header区域结束-->
+
+
+<!--大图轮播-->
+<div style="" class="Mask1">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <span class="Mask_title1"></span>
+    <div class="swiper-container demo" id="demo2">
+        <div class="swiper-wrapper" id="com_play"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!--大图轮播-->
+
+<!--中间部分开始-->
+<div id="container">
+    <!--头部开始-->
+    <div class="section" style="margin-bottom: 2%">
+        <div class="food-bg"></div>
+
+        <div class="header">
+            <div class="header-left am-fl">
+                <img src="" alt=""/>
+            </div>
+            <div class="header-right am-fr">
+                <h1></h1>
+                <div class="eval">
+                    <ul></ul>
+                    <span class="per-price"><span class="price"> </span> /人</span>
+                </div>
+                <h2 class="">自助餐</h2>
+                <p class="am-fr" style="margin-right: 10pt"> <span class="glocation"> </span>英里</p>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+
+<div class="section">
+    <div class="intro">
+        <h1>商户简介</h1>
+        <p class=" wrong" onclick="report()">报错</p>
+    </div>
+    <p class="intro-detail"><!--里面是详细的介绍--> </p>
+</div>
+
+    <div class="section section_item">
+
+        <ul class="list">
+            <li>
+                <span class="left-part">营业时间:</span>
+                <span class="right-part"><span class="open-time"></span><span class="operate_week" style="margin-left: 10pt"></span></span>
+            </li>
+            <li>
+                <span class="left-part">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                <span class="right-part">
+                    <span class="add open-add "></span>
+                    <span class="phone-icon map" onclick="launchGoogleMap(this)"><img src="../imgs/basic/location.png" alt=""/></span>
+                    <!--<span class="arrow-icon"><img src="../imgs/basic/arrow.png" alt=""/></span>-->
+                     <span class="lat" style="display:none"></span>
+                    <span class="lon" style="display:none"></span>
+                </span>
+            </li>
+
+            <li>
+                <span class="left-part">商户电话:</span>
+                <span class="right-part">
+                    <span class="add open-tel "></span>
+                    <span class="phone-icon"><img onclick="call();"  src="../imgs/basic/tel.png" alt=""/> <span style="display: none;" class="re_tel"></span></span>
+                </span>
+            </li>
+        </ul>
+        <!--更多图片开始-->
+            <div class="more-pics-guide" onclick="moreImg()">
+                <p class="more-pics">更多图片</p>
+                <div class="more-list0" style="overflow: hidden">
+                    <ul class="more-list"  >
+                        <!--<li><img src="../imgs/basic/meishi/more-pic-1.png" alt=""/></li>-->
+                    </ul>
+                    <span class="more-pics-arrow arrow"><img  src="../imgs/basic/meishi/more-arows.png" alt=""/></span>
+                </div>
+            </div>
+        <!--更多图片结束-->
+    </div>
+
+
+
+    <!--网友点评开始-->
+    <div class="section">
+        <h1 onclick="com_transform(this)"> <span style="display: none" class="comm-num"></span>网友点评 (<span class="comments-number"></span>)   <span class="am-fr arrow"><img src="../imgs/basic/arrow.png" alt=""/></span></h1>
+        <!--点评内容开始-->
+        <ul id="pinglun">
+            <span style="display: none" class="nickName"></span>
+            <!--<li>-->
+                <!--<div class="com_header">-->
+                    <!--<div class="icon_div">-->
+                        <!--<img class="am-circle" src="../imgs/basic/meishi/touxiang.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div class="user_info">-->
+                        <!--<span class="users">张丹rrr</span>-->
+                        <!--<div class="score">-->
+                            <!--<span>打分：</span>-->
+                            <!--<ul>-->
+                                <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-off-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="coms">-->
+                        <!--<p>这是评论这是评论这是评论这是评论这是评论这是评论</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="com_body">-->
+                    <!--<div class="show_imgs">-->
+                        <!--<ul>-->
+                            <!--<li><img onclick="showBigImg1()" src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                            <!--<li><img onclick="showBigImg1()" src="../imgs/basic/meishi/comments.png" alt=""/></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="com_body_info">-->
+                        <!--<ul>-->
+                            <!--<li class="browse_li praise"><span class="browse zan">2</span></li>-->
+                            <!--<li class="comments_li">评论<span class="comments">2</span></li>-->
+                            <!--<li class="rep"  onclick="do_com(this)">-->
+                                <!--<img src="../imgs/basic/meishi/rep.png" alt=""/>-->
+                                <!--回复-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="input_area">-->
+                        <!--<textarea name="" class="input"></textarea>-->
+                        <!--<button class="reply">回复</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="com_footer">-->
+                    <!--<ul class=".com_footer_ul">-->
+                        <!--<li>-->
+                            <!--<span class="icon"><img src="../imgs/basic/meishi/msg_icon.png" alt=""/></span>-->
+                            <!--<span class="com_name">张三：</span>-->
+                            <!--<span class="com_content">这是评论这是评论这是评论这是评论这是评论这是评论</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <!--网友点评结束-->
+
+
+    <!--来过开始-->
+    <div class="section" style="position:relative;">
+        <!--<a href="" >-->
+            <h1 onclick="visit(this)"><span class="com-num" style="display: none"></span>来过 (<span class="visit-number"></span>)   <span class="am-fr arrow" ><img src="../imgs/basic/meishi/more-arows.png" alt=""/></span></h1>
+        <!--</a>-->
+    </div>
+    <!--来过结束-->
+
+
+    <!--商务合作开始-->
+    <div class="section" style="position:relative;">
+        <!--<a href="" >-->
+        <h1 onclick="cooperate()">商务合作 <span class="am-fr arrow" ><img src="../imgs/basic/meishi/more-arows.png" alt=""/></span></h1>
+        <!--</a>-->
+    </div>
+    <!--商务合作结束-->
+
+
+    <!--推荐开始-->
+    <div class="section">
+        <div class="recommend_header">
+            <h1>推荐</h1>
+        </div>
+
+        <ul class="recommend_detail">
+            <!--<li>-->
+                <!--<div class="recommend_detail_left">-->
+                    <!--<img src="../imgs/basic/meishi/header-1.png" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="recommend_detail_right">-->
+
+
+                    <!--<div class="re_left">-->
+                        <!--<h1>吉布鲁海鲜自助</h1>-->
+                        <!--<div class="re_eval">-->
+                            <!--<ul>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<li><img src="../imgs/basic/star-on-big.png" alt=""/></li>-->
+                                <!--<span>￥110/人</span>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--<span class=" am-fl re_tag">自助餐</span>-->
+                        <!--<span class="am-fr re_miles">500m</span>-->
+                    <!--</div>-->
+
+
+                    <!--<div class="re_right">-->
+                        <!--<img class="re_right_img" src="../imgs/basic/tel.png" alt=""/>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+    <!--推荐结束-->
+</div>
+<!--中间部分结束-->
+<div class="footer" style="font-size: 1em">
+    <ul>
+        <li onclick="sign_up()" style="margin: 0%">
+            <img src="../imgs/basic/meishi/sign-location.png" alt=" "/>
+            <p>签到</p>
+        </li>
+
+        <li onclick="upload_img()">
+            <img src="../imgs/basic/meishi/uploadpics.png" alt=" "/>
+            <p>传图片</p>
+        </li>
+        <li onclick="comments()">
+            <img src="../imgs/basic/meishi/writecomments.png" alt=" "/>
+            <p>写评论</p>
+         </li>
+    </ul>
+</div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/index.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+    $('#demo2').swiper({
+        pagination: '#demo2 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

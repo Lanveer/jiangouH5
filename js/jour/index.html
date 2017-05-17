@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>周边游详情页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<body>
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" >商品详情</h1></div>
+    <div class="top-right am-fl" style="position: relative"></div>
+</div>
+<!--header区域结束-->
+
+<!--大图轮播开始-->
+<div style="" class="Mask">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <span class="Mask_title"></span>
+    <div class="swiper-container demo" id="demo1">
+        <div class="swiper-wrapper" id="big_play"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--大图轮播结束-->
+
+
+
+
+
+<!--中间部分开始-->
+
+<div id="container">
+    <!--轮播区域开始-->
+    <div id="play">
+        <div class="swiper-container demo" id="demo4">
+            <div class="swiper-wrapper" id="small_play">
+                <!--<div class='swiper-slide'><img src='../imgs/basic/secondhan/play.png' alt=''/></div>-->
+                <!--<div class='swiper-slide'><img src='../imgs/basic/secondhan/play.png' alt=''/></div>-->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--轮播区域结束-->
+
+      <div class="section">
+          <h1 style="line-height: 3em"><img class="gps" src="../imgs/basic/jour/gps.png" alt=""/> &nbsp;距您约 <span class="distance"></span>英里<span class="where"></span>
+              <img class="arrow am-fr" src="../imgs/basic/meishi/more-arows.png" alt=""/>
+
+          </h1>
+      </div>
+
+
+
+    <div class="section section_item">
+
+        <ul class="list" id="list">
+            <li>
+                <span class="left-part">开放时间:</span>
+                <span class="right-part"><span class="operate_time"></span> <span class="operate_week"></span></span>
+            </li>
+            <li>
+                <span class="left-part">联系电话:</span>
+                <span class="right-part tel"></span>
+            </li>
+            <li>
+                <span class="left-part">景区评级:</span>
+                <span class="right-part rating"></span>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section_des">
+            <h1 class="section_des_title" style="color: #282828">景区介绍</h1>
+            <span class="transform-id" style="display: none"></span>
+            <h1 onclick="transform(this)">攻略 <img style="margin: -3pt 10pt 0 0" class="arrow2" src="../imgs/basic/meishi/more-arows.png" alt=""/></h1>
+        </div>
+        <p class="section_description" style="color: #9d9c9c"> </p>
+    </div>
+
+
+<!--门票预订开始-->
+    <div class="section">
+        <h1 style="border-bottom: .1em solid #ebebeb;padding: 5pt 0 5pt 3%">门票预订</h1>
+        <ul class="ticket">
+            <!--<li>-->
+                <!--<div class="ticket-left am-fl"><span>票</span></div>-->
+                <!--<div class="ticket-mid am-fl">-->
+                    <!--<h1>天堂岛海洋乐园夜场门票</h1>-->
+                    <!--<span onclick="showTip(this)">预订须知&gt;</span>-->
+                    <!--<span class="use_id" style="display: none"></span>-->
+                    <!--<span class="use_money" style="display: block"></span>-->
+                <!--</div>-->
+                <!--<div class="ticket-right am-fr">-->
+                    <!--<h3 class=""><span>$</span><span class="privilege_price">0.5</span></h3>-->
+                    <!--<h2 class=""><span>$</span><span class="price">2</span></h2>-->
+                    <!--<button class="ticket-pay">支付</button>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <!--tips-->
+        <div class="tips">
+            <div class="tips-header">
+                <span class="close">×</span>
+                <p>预订须知</p>
+                <span class="fenxiang" onclick="fenxiang()"></span>
+                <span class="collect"></span>
+            </div>
+
+            <div class="tips-body">
+                <h1>天堂岛游乐园信息</h1>
+
+                <dl class="profit">
+                    <dt>优惠信息</dt>
+                    <dd>1.</dd>
+                </dl>
+
+                <dl class="ticket-fee">
+                    <dt>费用描述</dt>
+                    <dd>1.</dd>
+                </dl>
+
+                <dl class="refound">
+                    <dt>退款说明</dt>
+                    <dd>1.</dd>
+                </dl>
+            </div>
+
+            <div class="tips-footer">
+                <h2 class="total">$<span class="money"></span><span style="display: none" class="block"></span> <span class="ticket-id" style="display: none"></span></h2>
+                <button class="book-now" onclick="travelOrder(this)">立即预定</button>
+            </div>
+        </div>
+        <!--tips-->
+    </div>
+<!--门票预订结束-->
+
+
+
+    <!--评论开始-->
+    <div class="section">
+        <h1 onclick="com_transform(this)" style="border-bottom: .1em solid #ebebeb"> <span class="com_id" style="display:none"></span>评论 <span class=""></span>  <img class=" arrow2  am-fr" src="../imgs/basic/meishi/more-arows.png" alt=""/></h1>
+        <ul id="pinglun">
+            <span style="display: none" class="nickName"></span>
+            <!--<li>-->
+                <!--<div class="com_header">-->
+                    <!--<div class="icon_div">-->
+                        <!--<img class="am-circle" src="../imgs/basic/jour/user-icon.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div class="user_info">-->
+                        <!--<span class="users">ddd</span>-->
+                        <!--<p style="text-align: left;font-size: 9pt">3小时前</p>-->
+                    <!--</div>-->
+                    <!--<div class="coms">-->
+                       <!--<!--<p></p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="com_body">-->
+                    <!--<div class="show_imgs">-->
+                        <!--<ul>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                            <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="com_body_info">-->
+                        <!--<ul>-->
+                            <!--<li class="comments_li">评论<span class="comments">2</span></li>-->
+                            <!--<li class="rep"  onclick="do_com(this)">-->
+                                <!--<img src="../imgs/basic/jour/rep.png" alt=""/>-->
+                                <!--回复-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<!--输入框开始-->
+                    <!--<div class="input_area">-->
+                        <!--<div class="input-box">-->
+                            <!--<textarea name="" class="input"></textarea>-->
+                        <!--</div>-->
+
+
+                        <!--<button class="reply" onclick="reply(this)">提交</button>-->
+                    <!--</div>-->
+                    <!--<!--输入框结束-->
+                <!--</div>-->
+                <!--<div class="com_footer">-->
+                    <!--<ul class="com_footer_ul">-->
+                        <!--<li>-->
+                        <!--<span class="icon"><img src="../imgs/basic/jour/msg_icon.png" alt=""/></span>-->
+                        <!--<span class="com_name">张三：</span>-->
+                        <!--<span class="com_content">我们都需要明确自己的目标，我们必须知道，再实现梦想的道路上失败是在所难免的，为此我们需要时刻保持警惕，保持一种对梦想追逐的热情。</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <!--评论结束-->
+</div>
+<!--中间部分结束-->
+
+<div id="mask" style="width: 100%;height: 100%;position: fixed;bottom: 0;background: #000;z-index: 99996;opacity:.6; display: none"></div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/index.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo2').swiper({
+        pagination: '#demo2 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

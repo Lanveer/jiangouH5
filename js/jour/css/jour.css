@@ -1,0 +1,588 @@
+
+body {
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+    /*-moz-transform: translate3d(0, 0, 0);*/
+    /*-ms-transform: translate3d(0, 0, 0);*/
+    /*transform: translate3d(0, 0, 0);*/
+}
+body {
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+}
+
+.mask{
+    background: red;
+}
+
+
+
+a{color:#000;}
+*{margin: 0;padding: 0;}
+body{font-family: "microsoft yahei"
+    background-color: #fff;
+}
+ul{
+    padding-left: 0!important;
+}
+ul>li{list-style: none}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0!important;
+    font-weight: normal;
+}
+
+img{
+    -webkit-box-shadow:0!important;
+    box-shadow:0!important;
+    border: 0!important;
+}
+/*content  begin*/
+.jour-content{
+    max-width: 800px;width: 100%;height: auto;
+    overflow: hidden;margin: auto;
+    background-color: #fff;
+    position: relative;
+}
+.jour-content>h1{
+    padding: 3% 0 2% 3%;
+    font-weight: normal;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    position: relative;
+    border-bottom: 4px solid #f2f2f2;
+}
+
+.gps{
+    width: 18px;height: 25px;
+}
+.arrow{
+    width: 10px;height: 10px;
+    margin: 7% 2% 0 0;
+}
+
+.open-time,.open-tel,.open-rank{
+    border-bottom: 1px solid #ebebeb;
+    padding:2.5% 0 4% 3%;
+    margin-bottom: 0;
+    margin-top: 0!important;
+    font-size: 1.5rem;
+    font-weight: normal;
+
+}
+
+.section1{
+    background-color: #fff;
+    margin-top: 2%;
+
+}
+.up{
+    width: 15px;height: 8px;
+}
+
+.open-rank{
+    /*border-bottom: 4px solid #f2f2f2;*/
+}
+
+.jour-des{
+    /*background-color: #fff;*/
+    background-color: #fff;
+    /*margin-top: 2%;*/
+    position: relative;
+    border-bottom: 4px solid  #f2f2f2;
+
+}
+.jour-des>h1{
+    font-size: 1.5rem;
+    padding: 2% 0 2% 3%;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.jour-detail{
+    padding: 1% 0 5% 3%;
+    color: #b4b4b4;font-size: 14pt;
+    width: 98%;
+    height:auto;
+    overflow: hidden;
+    /*background-color: red;*/
+    margin: auto;
+    position: relative;
+}
+.jour-detail-some{
+    color: #b4b4b4;font-size: 1.4rem;
+    width: 98%;
+    margin-top: 10pt;
+    /*height: 2em;*/
+
+}
+.jour-detail-all{
+    display: none;
+    font-size: 1.4rem;
+}
+.show-more{
+    border: none;outline: none;
+    background-color: #fff;
+    /*padding-bottom: 3%;*/
+    position:absolute;left: 45%;
+    bottom: 0%;
+
+}
+
+
+
+.ticket{
+    background-color: #fff;
+    margin-top: 2%;
+
+}
+.ticket>h1{
+    font-size:1.5rem;
+    padding: 2% 0 2% 3%;
+    border-bottom: 1px solid #ebebeb;
+}
+.ticket>ul{
+    overflow: hidden;
+    margin: 0;
+}
+.ticket>ul>li{
+
+    padding: 2% 0 3% 0%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f2;
+}
+.ticket>ul>li:last-child{
+    border-bottom: 4px solid #f2f2f2;
+}
+.ticket-left{
+    /*width: 10%;*/
+    width: 16pt;height: 16pt;
+    margin:0% 0 0 3%;
+    position: relative;
+}
+.ticket-left>span{
+    display: block;
+    position: relative;margin-top: 6%;
+    width:1.5em;height:1.5em;border-radius: 5px;
+    background-color: #22d3b9;color: white;
+    font-size: 10pt;line-height: 17pt;text-align: center;
+}
+.ticket-mid{
+    width: 60%;
+    margin-left: 3%;
+}
+.ticket-mid>h1{
+    padding: 0% 0 1% 0;
+    font-size:1.4rem;
+}
+.ticket-mid>a{
+    color: #8a8989;font-size: 1.2rem;
+}
+.ticket-right{
+    width: 20%;margin-right: 3%;
+}
+.ticket-right>h2{
+    color: #8a8989;padding-right: 6%;
+    font-size: 12pt;
+}
+.ticket-right>h2>span{
+    color: #ff4e00;
+    font-size: 15pt;
+
+}
+.ticket-pay{
+    clear: right;
+    /*width: 75%;height:2em;*/
+    width:50pt;height:25pt;
+    outline: none;
+    border: none;font-size: 1em;
+    border-radius: 5px;
+    background-color: #ff4e00;color: #fff;
+
+}
+.stragedy{
+    padding: 0% 0 2% 0;
+    /*margin-bottom: 2%;*/
+    background-color: #fff;
+}
+.stragedy>h1{
+    padding: 2% 0 0 3%;
+    font-size: 1.5rem;
+}
+.arrow2{
+    margin: 3% 3% 0 0!important;
+    height: 10px;width: 10px;
+}
+
+
+.jour-comment{
+    border-top:4px solid #f2f2f2;
+    margin-top: 0%;
+}
+.jour-comment>a>h1{
+    font-size: 1.5rem;
+    padding: 2% 0 3% 3%;
+    border-bottom: 1px solid #ebebeb;
+
+}
+.jour-comment>ul{
+}
+.jour-comment>ul>li{
+    position: relative;
+    margin-left: 3%;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+.jour-comment-icons{
+    /*width: 15%;*/
+    width:43pt;height: 43pt;
+    margin-right: 4%;
+    border-radius: 50%;
+}
+.jour-comment-icons>img{
+    width: auto;height: auto;
+    overflow: hidden;
+    
+}
+
+.jour-comment-header-top{
+     height: auto;
+    overflow: hidden;
+}
+.jour-comment-header-top>h1{
+font-size: 1.5rem;
+    padding: 2% 0 0 0%;
+}
+.jour-comment-header-top>span{
+    color: #b8b8b8;
+    font-size: 10pt;
+    /*padding: 2% 0 0 0%;*/
+}
+.jour-comment-header-down{
+    margin-top: 2%;
+}
+.jour-comment-header-down>p{
+    font-size: 1.4rem;
+}
+
+.jour-comment-body{
+    margin-top: 2%;
+
+}
+.jour-comment-body>ul{
+    margin-left: -2%;
+}
+.jour-comment-body>ul>li{
+    width: 30%;
+    margin: 2% 0 0 2%;
+    display: inline-block;
+}
+
+
+.am-active>a{
+    /*top:40%!important;*/
+}
+
+.jour-comment-footer{
+    margin: -2% 0 0 0%;
+    overflow: hidden;
+    /*background-color: pink;*/
+    position: relative;
+}
+
+.jour-comment-footer>h3{
+    font-size: 1.2rem;
+    color: #9b9b9b;
+    padding:2% 0 0 1%;
+}
+
+.reply{
+    width:55px;height:25px;
+    margin: -3% 3% 0 0;
+}
+/*content  over*/
+
+
+
+
+
+/*周边游攻略开始*/
+
+.gl-header{
+    max-width: 800px;width: 100%;
+    height: 4em;margin: auto;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.gl-header-back{
+    position: absolute;
+    left:0%;top: 6%;
+    width: 20px;height: 20px;
+}
+.gl-header>span{
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+}
+.gl-header-share{
+    position: absolute;
+    right:3%;top: 10%;line-height: 3em;
+    width: 20px;height: 20px;
+}
+
+
+
+.gl-ul{margin-top: 2%}
+.gl-ul>li:last-child{border-bottom: none}
+.gl-ul>li{
+    border-bottom: 1px solid #ebebeb;overflow: hidden;
+}
+.gl-ul>li>a{
+    display: block;
+    padding: 2% 0 0 3%;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+.gl-left{
+    width: 30%;height: 70pt;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+.gl-right{
+    width: 65%;height: 70pt;
+    overflow: hidden;margin-left: 10px;
+
+
+}
+.gl-right>h1{
+    font-size: 1em;
+    color: #000;
+}
+.gl-right>ul>li>img{
+    width: 20px;height: 20px;
+}
+.gl-right>ul{
+    width: 100%;
+    position: absolute;
+    top: 30%;padding-left: 0;
+}
+.gl-right>ul>li{
+    float: left;width:24%;overflow: hidden;
+    line-height: 50px;color: #000;
+    margin-left:2px;
+    position: relative;
+    text-align: left;
+}
+.gl-time,.gl-restore,.gl-share{
+    padding-left: 5%;
+    color: #9b9b9b;
+    font-size: 1rem;
+    position: absolute;top: 4%;
+
+}
+
+
+
+/*周边游攻略结束*/
+
+
+
+/*周边游攻略详情开始*/
+.gl-detail{
+   margin-top: 3%;
+    overflow: hidden;
+}
+
+.gl-guide{
+    width: 100%;height: auto;
+    overflow: hidden;
+    position: relative;
+    /*background: red;*/
+    
+}
+.gl_imgs{
+    width: 100%;height:120pt;
+    margin: 2% 0 2% 0;
+}
+.gl_imgs>img{width: 100%;height: 100%;}
+
+
+.gl-guide>h1{
+    position: absolute;left:25pt;
+    top: 0;
+    font-size: 1em;
+}
+.gl-rank{
+    background: url("../../imgs/jour/circle.png");
+    background-repeat: no-repeat;
+    width: 20pt;height:20pt;
+    -webkit-background-size: contain;
+    background-size: contain;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    line-height: 20pt;color: #ff4e00;
+}
+
+
+.gl-detail>ul>li{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 95%;
+    margin:2% auto;
+}
+.gl-detail>ul>li>h1>img{
+    width: 30px;height: 30px;
+    margin-right: 1%;
+}
+.gl-detail>ul>li>img{
+    /*margin: 2% 0 2% 0;*/
+}
+
+.gl-detail>ul>li>p{
+    font-size: 1em;
+    color: #8b8989;
+}
+
+/*周边游攻略详情结束*/
+
+
+/*周边游评论开始*/
+    .pl{
+        width: 95%;margin: 2% auto 0;
+        position: relative;
+        height: auto;
+        background-color: #fff;
+        overflow: hidden;
+        /*border-bottom: 4px solid #ebebeb;*/
+}
+.pl-top{
+    background-color: #fff;
+}
+
+.pl-icon{
+    width: 5em;height:5em;
+    margin: 2% 0 2% 0 ;
+
+}
+.pl-info{
+    width: 78%;height: 5em;margin: 3% 0 2% 2%;
+    position: relative;
+}
+
+.pl-user{
+    font-size: 1.2em;
+}
+.pl-time{
+    font-size: 1em;
+    color: #c7c7c7;
+}
+.pl-title{
+    clear: both;
+}
+
+.pl-mid{
+overflow: hidden;
+    background-color: #fff;
+}
+.pl-mid>ul{margin: 0% 0 0 -2%;}
+.pl-mid>ul>li{
+    display: inline-block;
+    width: 30%;
+    margin: 2% 0 0 2%;
+}
+.pl-mid>ul>li:hover{cursor: pointer;}
+.pl-mid>span{color:#9b9b9b;margin-top: 2%;
+font-size: 1em;
+}
+.sub{
+    width:50pt;height:25pt;
+    border-radius:20px;
+    outline: none;
+    /*background-color: #000;*/
+    border: 1px solid #f2f2f2;
+    margin: 2% 3% 0 0 ;
+    line-height:25pt;
+    color: #656565;
+    text-align: center;
+    cursor: pointer;
+}
+.sub2{
+    margin-top: 0%;
+    /*background-color: red;*/
+}
+.sub>img{
+    width: 20px;height:19px;padding-left: 2%;
+    margin-right: 5%;
+}
+
+.pl-pics{
+    width: 100%;
+    margin: auto;
+    /*background-color: red;*/
+}
+
+.am-pureview-slider li{
+    height: auto;
+
+}
+.pl-pics>li{
+
+}
+
+
+.pl-bottom{
+
+    background-color: #fff;
+}
+.pl-bottom>ul{
+    width: 75%;
+    position: relative;
+     margin: 4% 0 0 15%;
+    border-top: .1px solid #ebebeb;
+    /*padding-top: 2%;*/
+}
+.pl-bottom>ul>li{
+    border-bottom: 1px solid  #ddd;
+    padding: 2% 0 2% 0 ;
+}
+.pl-bottom>ul>li:last-child{
+    border-bottom: none;
+}
+.pl-users{color: #406987}
+/*周边游评论结束*/
+
+
+
+/*评论盒子开始*/
+.box{
+    display: none;
+    width: 98%;
+    position: relative;
+    overflow: hidden;
+}
+
+.msg{
+    width: 90%;height: 6rem;
+    padding-bottom: 20pt;
+      border: .1em solid #ebebeb;
+}
+.box2{margin-top: 10pt}
+.msg2{width: 100%}
+.huifu2{margin-right: 0!important;}
+
+.huifu{
+    float: right;
+    margin: 10pt 10% 0 0;
+    width:30pt;height:20pt;
+    border: none;
+    outline: none;
+}
+/*评论盒子结束*/

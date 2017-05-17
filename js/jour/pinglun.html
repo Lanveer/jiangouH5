@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>周边游详评论页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<body>
+
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl"><a href="index.html"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" >商品详情</h1></div>
+    <div class="top-right am-fl" style="position: relative"></div>
+</div>
+<!--header区域结束-->
+
+<!--大图轮播开始-->
+<div style="" class="Mask">
+    <span class="Mask_close"><img src="../imgs/basic/back.png" alt=""/></span>
+    <div class="swiper-container demo" id="demo1">
+        <div class="swiper-wrapper" id="big_play"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--大图轮播结束-->
+
+<div id="container">
+    <ul id="pinglun">
+        <span style="display: none" class="nickName"></span>
+        <!--<li>-->
+            <!--<div class="com_header">-->
+                <!--<div class="icon_div">-->
+                    <!--<img class="am-circle" src="../imgs/basic/jour/user-icon.png" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="user_info">-->
+                    <!--<span class="users">张丹rrr</span>-->
+                    <!--<p style="text-align: left;font-size: 9pt;">3小时前</p>-->
+                <!--</div>-->
+                <!--<div class="coms">-->
+                    <!--<p>真正的勇士敢于面对淋漓的鲜血，敢于直面惨淡的人生，他们能够清楚的知道自己的定位，他们能够知道自己想要的，并能够位置去不断的努力奋斗。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="com_body">-->
+                <!--<div class="show_imgs">-->
+                    <!--<ul>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                        <!--<li><img src="../imgs/basic/jour/comm1.png" alt=""/></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="com_body_info">-->
+                    <!--<ul>-->
+                        <!--<li class="comments_li">评论<span class="comments">2</span></li>-->
+                        <!--<li class="rep"  onclick="do_com(this)">-->
+                            <!--<img src="../imgs/basic/jour/rep.png" alt=""/>-->
+                            <!--回复-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;输入框开始&ndash;&gt;-->
+                <!--<div class="input_area">-->
+                    <!--<div class="input-box">-->
+                        <!--<textarea name="" class="input"></textarea>-->
+                    <!--</div>-->
+
+
+                    <!--<button class="reply" onclick="reply(this)">提交</button>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;输入框结束&ndash;&gt;-->
+            <!--</div>-->
+
+            <!--<div class="com_footer">-->
+                <!--<ul class="com_footer_ul">-->
+                    <!--<li>-->
+                        <!--<span class="icon"><img src="../imgs/basic/jour/msg_icon.png" alt=""/></span>-->
+                        <!--<span class="com_name">张三：</span>-->
+                        <!--<span class="com_content">我们都需要明确自己的目标，我们必须知道，再实现梦想的道路上失败是在所难免的，为此我们需要时刻保持警惕，保持一种对梦想追逐的热情。</span>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+</div>
+
+
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/pinglun.js"></script>
+<script src="../js/basic.js"></script>
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

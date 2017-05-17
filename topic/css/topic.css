@@ -1,0 +1,319 @@
+
+.top-title{
+    line-height:35px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13pt;
+    color: #282828;
+}
+body{
+    background: #f2f2f2!important;
+}
+.banner{
+width: 100%;height: 30rem;
+    overflow: hidden;
+    margin-bottom: 10pt;
+}
+
+.banner>img{
+    width: 100%;height:auto;
+}
+.topic_user{display: flex;flex-direction: row;align-items: center;margin: 10px 0 10px 0;}
+.topic_icon{
+    width: 40pt;height: 40pt;margin-left: 10px;
+
+}
+.topic_name{
+margin-left: 10px;font-size: 12pt;
+}
+.topic_age{
+    display: block;
+    margin-left: 10px;
+    display: block;
+    width:35pt;height: 15pt;
+    border: 1px solid #fe74a5;border-radius: 5px;
+    line-height:15pt;
+    vertical-align: middle;
+    color: #fe74a5;font-size:10pt;
+    background-image: url("../../imgs/basic/topic/girl.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 7px 6px;
+    padding-left: 6%;
+}
+
+.topics{margin-left: 10px;}
+
+.topics>h1{font-weight: normal;
+font-size: 10pt;
+ padding-top: 10pt;color: #39bc30;
+}
+
+.topics>h3{font-weight: normal;
+    font-size: 10pt;
+    color: #282828;
+}
+
+.topics_detail_date{
+    float: left;
+    /*width:40%;*/
+    overflow: hidden;
+    /*background: red;*/
+}
+
+
+.topics_detail{
+    margin: 10pt 0 5pt 0;color: #9b9b9b;
+   flex-direction: row;align-items: center;
+    overflow: hidden;
+    font-size: 9pt;
+}
+.topics_detail>span{font-size: 1.1rem}
+.topics_detail_collect {
+    float:right;
+    line-height: 20px;
+    background-image: url('../../imgs/basic/topic/collect_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    /*width:60px;*/
+    height: 20px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    padding-left: 25px;
+    /*background-color: red;*/
+}
+.topics_detail_reading{
+    float:right;
+    line-height: 20px;
+    background-image: url('../../imgs/basic/topic/reading_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /*width:60px;*/
+    height: 20px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    /*background-color: green;*/
+}
+
+.topics_detail_share{
+    float: right;
+    line-height: 20px;
+    background-image: url('../../imgs/basic/topic/share_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 25px;
+    margin-right: 5pt;
+    /*width:60px;*/
+    height: 20px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    /*background-color: blue;*/
+}
+
+.prise>h1{float: left;font-weight: normal;
+    font-size:10pt;color: #9b9b9b; padding-left: 10pt;padding-top: 10pt}
+.prise>h2{
+    float: right;
+    padding-right: 24pt;
+    font-weight: normal;
+    font-size: 10pt;
+    color: #9b9b9b;
+    padding-top: 10pt;
+    background-image: url(../../imgs/basic/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 43px 18px;
+    padding-left: 1px;
+}
+.prise>h2>a{color: #9b9b9b;}
+
+
+.prise_icons{
+    clear: both;padding-left:10pt;padding-top: 10px;
+
+}
+.prise_icons>li:first-child{margin-left: 0}
+
+.prise_icons>li>img{width: 100%;height: 100%;}
+.prise_icons>li{
+    display:inline-block;width: 25pt;height: 25pt;
+    margin-left: 20px;
+}
+/*5*/
+@media screen and (width: 320px) {
+    .prise_icons>li{display:inline-block;width: 20pt;height: 20pt;
+        margin-left: 20px;
+    }
+    .all_prise_name>p{
+        font-size: 1rem!important;
+        color: #282828;
+        padding-left: 15pt;
+    }
+    .all_prise_time{
+        position: absolute;right: 10pt;
+        font-size: 1rem!important;color: #aeaeae;
+    }
+
+    .topics_detail_date{
+        /*width:40%;*/
+    }
+
+
+
+
+
+
+
+}
+
+/*6*/
+@media screen and (width: 375px) {
+    .prise_icons>li{display:inline-block;width: 29pt;height: 29pt;
+        margin-left: 20px;
+    }
+    .all_prise_name>p{
+        font-size: 1em!important;
+        color: #282828;
+        padding-left: 15pt;
+    }
+    .all_prise_time{
+        position: absolute;right: 10pt;
+        font-size: 1em!important;color: #aeaeae;
+    }
+
+}
+/*plus*/
+@media screen and (width: 414px) {
+    .prise_icons>li{display:inline-block;width: 34pt;height: 34pt;
+        margin-left: 20px;
+    }
+    .all_prise_name>p{
+        font-size: 1.1em!important;
+        color: #282828;
+        padding-left: 15pt;
+    }
+    .all_prise_time{
+        position: absolute;right: 10pt;
+        font-size: 1.1em!important;color: #aeaeae;
+    }
+
+}
+
+
+.list{
+    padding-left: 0;
+}
+
+.list>li{
+    position: relative;
+    height: auto;
+    overflow:hidden;
+    border-bottom:.1em solid #f2f2f2;
+    display: block;
+    width: 90%;margin: auto;
+    padding: 5pt 0 10pt 0;
+
+}
+
+.list_icon{float: left;
+width: 40pt;height: 40pt;
+
+}
+
+.list_icon>img{
+    width: 100%;height: 100%;
+}
+
+.list_info{float: left;
+margin-left: 10pt;
+}
+
+.list_info>h1{font-weight: normal;font-size: 10pt;color:#406987;}
+
+.list_info>p{font-weight: normal;font-size: 9pt;color: #9b9b9b;
+}
+.list_info>h2{font-weight: normal;font-size: 10pt;color: #282828;
+}
+
+
+.list_index{
+    float: right;
+    color:#9b9b9b;
+    font-size: 10pt;
+}
+
+.talk{
+    width: 100%;height: 42pt;
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    z-index: 888;
+}
+
+.talk_input{
+    width: 70%;
+    height: 30pt;
+    background-color: #fff;
+    margin-left: 10pt;
+    margin-top: 6pt;
+    border: none;
+    outline: none;
+}
+.talk_input::-webkit-input-placeholder{font-size: 9pt;padding-left: 10pt;color: #9b9b9b}
+.talk_input::-moz-placeholder{font-size: 9pt;padding-left: 10pt;color: #9b9b9b}
+.talk_input:-ms-input-placeholder{font-size:9pt;padding-left: 10pt;color: #9b9b9b}
+.talk_input:placeholder{font-size: 9pt;padding-left: 10pt;color: #9b9b9b}
+
+.send_talk{
+    font-size:10pt;background: transparent;
+    border: none;
+    outline: none;margin-left: 20pt;
+    color: #999999;
+    height: 30pt;margin-top: 6pt;
+}
+
+
+
+/*全部赞开始*/
+
+.all_prise{padding-left: 10pt;display: flex;flex-direction: column;}
+.all_prise>li{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.all_prise_icon{
+    width: 40pt;height: 40pt;
+    margin: 10pt 0 10pt 0;
+}
+
+.all_prise_icon>img{
+    width: 100%;height: 100%;
+}
+
+.detail-box{
+    width: calc( 100% - 50pt);
+    float: right;
+    height: auto;overflow: hidden;
+}
+
+
+
+.all_prise_name>p{
+    font-size: 1.2em;
+    color: #282828;
+    padding-left: 15pt;
+}
+.all_prise_time11{
+    /*position: absolute;right: 10pt;*/
+    float: right;
+    font-size: 10pt;color: #aeaeae;
+}
+
+
+/*全部赞结束*/

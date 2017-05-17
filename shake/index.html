@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>摇一摇</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/shake.css"/>
+<body>
+
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" ></h1></div>
+    <div class="top-right am-fl" style="position: relative"></div>
+</div>
+<!--header区域结束-->
+
+
+
+<!--中间部分开始-->
+<div id="container">
+
+    <!--轮播区域开始-->
+    <div id="play">
+        <div class="swiper-container demo" id="demo4">
+            <div class="swiper-wrapper">
+                <!--<div class='swiper-slide'><img onclick="showBigImg()" src='../imgs/basic/shake/paly.png' alt=''/></div>-->
+                <!--<div class='swiper-slide'><img onclick="showBigImg()" src='../imgs/basic/shake/paly.png' alt=''/></div>-->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="play-title">
+            <img src="../imgs/basic/shake/Time.png" alt=""/>
+            <p></p></div>
+    </div>
+    <!--轮播区域结束-->
+
+    <!--title区域开始-->
+    <div class="header">
+        <h1></h1>
+
+        <ul>
+            <li class="price-tag" >
+                <span class="profit-tag">限时优惠</span>
+                <p>
+                <span class="now-price"></span>
+                <span class="prev-price"></span>
+                </p>
+            </li>
+            <li class="store-tag" >
+                <span style="padding-left: 20pt" class="collect-account"></span><span>人已收藏</span>
+            </li>
+        </ul>
+    </div>
+    <!--title区域结束-->
+
+
+
+    <!--介绍区域开始-->
+    <div class="intro">
+        <p></p>
+    </div>
+    <!--介绍区域结束-->
+
+
+    <!--详情开始-->
+    <div class="section detail">
+        <h1>详情</h1>
+        <ul class="list">
+            <li>
+                <span class="left-part">店名:</span>
+                <span class="right-part shop-name"></span>
+            </li>
+            <li>
+                <span class="left-part">电话:</span>
+                <span class="right-part shop-tel"></span>
+            </li>
+            <li>
+                <span class="left-part">地址:</span>
+                <span class="right-part shop-add"></span>
+            </li>
+        </ul>
+    </div>
+    <!--详情结束-->
+</div>
+<!--中间部分结束-->
+
+
+<div class="footer">
+    <div class="footer-collect">
+        <img src="../imgs/basic/shake/collect.png" alt=""/>
+        <p>立即收藏</p>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../lib/amazeui.swiper.js"></script>
+<script src="js/shake.js"></script>
+<script src="../js/basic.js"></script>
+
+<script>
+    $('#demo4').swiper({
+        pagination: '#demo4 .swiper-pagination',
+        paginationclickable: true,
+        spaceBetween: 30,
+        nextButton: '#demo4 .swiper-button-next',
+        prevButton: '#demo4 .swiper-button-prev',
+        observer:true,
+        observeParents:true
+    });
+
+    $('#demo1').swiper({
+        pagination: '#demo1 .swiper-pagination',
+        paginationClickable: true,
+        observer:true,
+        observeParents:true
+    });
+</script>
+</html>

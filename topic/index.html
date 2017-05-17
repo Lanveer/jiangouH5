@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>话题详情</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="../lib/amazeui.swiper.min.css"/>
+<link rel="stylesheet" href="css/topic.css"/>
+<body>
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" ></h1></div>
+</div>
+<!--header区域结束-->
+
+<!--大图轮播结束-->
+
+
+<!--中间开始-->
+<div id="container">
+
+<!--first part begin-->
+    <div class="section">
+        <!--user icon-->
+        <div class="topic_user">
+            <img onclick="viewOtherInfo(this)" class="topic_icon am-circle" src="" alt=""/>
+            <span style="display: none" class="dianzan_id"></span>
+            <span class="topic_name"></span>
+            <span class="topic_age"></span>
+        </div>
+        <!--user icon-->
+
+        <!--轮播区域开始-->
+        <div class="banner">
+            <img src="" alt=""/>
+        </div>
+        <!--轮播区域结束-->
+
+        <!--topic-->
+        <div class="topics">
+            <h3></h3>
+            <h1></h1>
+
+            <div class="topics_detail">
+                <span class="topics_detail_date"></span>
+                <span class="topics_detail_share" onclick="fenxiang()"></span>
+                <span class="topics_detail_reading"></span>
+                <span class="topics_detail_collect"></span>
+                <span class="receive_id" style="display: none;"></span>
+            </div>
+        </div>
+        <!--topic-->
+
+    </div>
+ <!--first part over-->
+
+<!--zan begin-->
+    <div class="section prise">
+        <h1>赞过</h1>
+        <h2><a href="#" onclick="all_praise()">全部</a></h2>
+
+        <ul class="prise_icons">
+            <!--<li><img  class="am-circle" src="../imgs/basic/topic/praise_icon.png" alt=""/></li>-->
+        </ul>
+    </div>
+<!--zan over-->
+
+<!--list begin-->
+    <div class="section topic_list">
+        <ul class="list">
+            <!--<li>-->
+                <!--<div class="list_icon"><img class="am-circle" src="../imgs/basic/topic/topic_icon.png" alt=""/></div>-->
+                <!--<div class="list_info">-->
+                    <!--<h1>Alice</h1>-->
+                    <!--<p>3小时前</p>-->
+                    <!--<h2>生活中的趣事还是真多啊!</h2>-->
+                <!--</div>-->
+                <!--<div class="list_index"><span>1</span>楼</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+<!--list over-->
+
+
+
+    <div class="talk">
+        <input type="text" class="talk_input" onfocus="checkIsSelf()" placeholder="说点什么吧~"/>
+        <span style="display: none" class="last_floor"></span>
+        <button class="send_talk" onclick="send_talk(this)">发送</button>
+        <span style="display:none" class="header_img"></span>
+        <span style="display:none" class="nickname"></span>
+    </div>
+</div>
+
+<!--中间结束-->
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<!--<script src="../lib/amazeui.swiper.js"></script>-->
+<script src="js/topic.js"></script>
+<script src="../js/basic.js"></script>
+
+</html>

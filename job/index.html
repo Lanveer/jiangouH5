@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>工作招聘</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes">
+</head>
+<link rel="stylesheet" href="../css/basic.css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css"/>
+<link rel="stylesheet" href="css/job.css"/>
+<body>
+<!--header区域开始-->
+<div class="top">
+    <div class="top-left am-fl" onclick="goBack()"><a href="#"><img class="back" src="../imgs/basic/back.png" alt=""/></a></div>
+    <div class="top-mid am-fl"><h1 class="top-title" >职位详情</h1></div>
+    <div class="top-right am-fl" style="position: relative">
+        <!--<div></div>-->
+        <div onclick="fenxiang()"><img class="share" src="../imgs/basic/share.png" alt=""/></div>
+        <!--<img class="collect collect1" src="../imgs/basic/collect.png" alt=""/>-->
+        <!--<img class="collect collected" src="../imgs/basic/collected.png" alt=""/>-->
+        <span class="collect"></span>
+    </div>
+</div>
+<!--header区域结束-->
+
+
+<!--中间部分开始-->
+<div id="container">
+
+    <!--详细内容开始-->
+
+    <!--招聘section开始-->
+    <div class="section job_section">
+        <h1 class="job_title">对的</h1>
+        <h3>
+            <span class="job_releaseTime"></span>
+            <span style="margin-left:15pt;">浏览量：</span><span class="job_browse"></span>
+            <span>次</span>
+        </h3>
+    </div>
+    <!--招聘section结束-->
+
+
+
+    <div class="section section_item">
+        <ul class="list">
+            <li>
+                <span class="left-part">薪资水平:</span>
+                <span class="right-part job_salary"></span>
+            </li>
+            <li>
+                <span class="left-part">招聘人数:</span>
+                <span class="right-part job_persons"></span>
+            </li>
+            <li>
+                <span class="left-part">学历要求:</span>
+                <span class="right-part job_education"></span>
+            </li>
+            <li>
+                <span class="left-part">工作年限:</span>
+                <span class="right-part job_experience"></span>
+            </li>
+            <li>
+                <span class="left-part">公司名称:</span>
+                <span class="right-part job_company"></span>
+            </li>
+            <li>
+                <span class="left-part">工作地点:</span>
+                <span class="right-part job_location"></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section_des">
+            <h1 class="section_des_title">职位描述</h1>
+        </div>
+        <p class="section_description"> </p>
+    </div>
+
+    <div class="claim section user_info_box">
+        <div class="user_info_div">
+            <img class="user_icon am-circle" src="../imgs/basic/secondhan/user.png" alt=""/>
+            <h1 class="user_name"></h1>
+        </div>
+
+        <img src="../imgs/basic/arrow.png" alt="" class="user_info_arrow"/>
+         <p class="user_times"></p>
+    </div>
+
+
+    <div class="section">
+        <!--未认领时候显示的div开始-->
+        <div class="claim unrenling">
+            <h1>认领</h1>
+            <img src="../imgs/basic/arrow.png" alt="" class="user_info_arrow"/>
+        </div>
+        <!--未认领时候显示的div结束-->
+    </div>
+
+
+    <div class="section report">
+        <h1 style="padding-top: 10pt;color: #282828">请选择当面交易，不要提前汇款</h1>
+        <h1 style="color: #fe7200;">如遇无效、虚假、咋骗信息，请立刻举报</h1>
+
+        <div class="report_div">
+            <button class="report_btn"  onclick="report()">举报</button>
+        </div>
+    </div>
+
+    <!--详细内容结束-->
+</div>
+<!--中间部分结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <div class="footer-left am-fl">
+        <h1 class="footer-left-uses"><span class="footer-left-user"></span>(<span class="sd-tag"></span>)</h1>
+        <h1 class="footer-left-phone"></h1>
+    </div>
+    <div class="footer-right am-fr">
+        <ul>
+            <li><a class="" style="" onclick="call();"  value='call' id='call'>
+                <figure>
+                    <img src="../imgs/basic/phone.png" alt=" "/>
+                    <figcaption>电话</figcaption>
+                </figure>
+            </a></li>
+            <li><a class="" onclick="sendMsg()">
+                <figure>
+                    <img src="../imgs/basic/msg.png" alt=" "/>
+                    <figcaption>短信</figcaption>
+                </figure>
+            </a></li>
+            <li><a class=""  style="border-right: none" onclick="openChattingList()" >
+                <figure>
+                    <img src="../imgs/basic/chat.png" alt=" "/>
+                    <figcaption>聊天</figcaption>
+                </figure>
+            </a></li>
+        </ul>
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="js/job.js"></script>
+<script src="../js/basic.js"></script>
+</html>

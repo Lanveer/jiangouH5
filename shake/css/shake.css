@@ -1,0 +1,116 @@
+body{
+    background-color: #f2f2f2!important;
+}
+
+
+#play{
+    height: 171pt;
+    /*background-color: red;*/
+}
+
+.swiper-container{
+    height: 141pt;overflow: hidden;
+}
+
+.swiper-slide>img{width: 100%;height: 100%;max-width: 100%}
+
+.play-title{
+    height: 30pt;
+    background-color: #ff343e;text-align: center;
+
+}
+.play-title>p{
+    font-size: 10pt;padding-left: 4pt;
+    line-height: 30pt;
+    color: #fff;
+    display: inline;
+}
+.play-title>img{
+    width: 15pt;height: 15pt;
+}
+
+.header{
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10pt;
+    background-color: #fff;
+}
+.header>h1{
+    font-weight: normal;font-size: 12pt;
+    color: #2e2e2e;
+    padding: 3% 0 0 3%;
+}
+.header>ul{padding-left: 3%;}
+.price-tag{
+    float: left;
+    width: 55%;
+}
+
+.profit-tag{
+    width: 45pt;height: 20pt;font-size: 9pt;color: #fff;
+    background-color: #da2a35;display: block;float: left;
+    text-align: center;line-height: 20pt;
+}
+
+.price-tag>p{float: left}
+
+.now-price{font-size: 12pt;color: #da2a35;margin-left: 4pt}
+.prev-price{font-size: 10pt;color: #9b9b9b}
+
+.store-tag{
+    float: right;
+    width: 35%;margin-right: 3%;
+    background-image: url('../../imgs/basic/shake/collection.png');
+    background-repeat: no-repeat;
+    background-position: left 0;
+    background-size: contain;
+
+}
+
+.store-tag>span{font-size: 9pt;color: #282828;}
+
+
+.intro{width: 100%;
+    height: auto;overflow: hidden;
+    padding-bottom: 10pt;
+    margin-bottom: 3pt;
+    background-color: #fff;
+}
+
+.intro>p{
+    padding:3% 0 3% 3%;
+    font-size: 10pt;color: #282828;line-height: 200%;
+}
+
+.detail{}
+.detail>h1{
+    font-weight: normal;font-size: 10pt;
+    color: #282828;
+    padding: 5pt 0 5pt 3%;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-collect{
+    width: 80pt;height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #ff343e;
+    text-align: center;
+}
+.footer-collect>img{
+    width:30px;height: 30px;
+    display: block;margin: auto;
+}
+.footer-collect>p{
+    font-size: 10pt;
+    color: #fff;
+}
+
+.list>li{color: #282828;
+border-bottom: 1px solid #ddd;
+    padding-bottom: 10pt;
+    /*background-color: gray;*/
+    margin-top: 5pt;
+    line-height: none;
+}

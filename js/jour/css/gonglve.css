@@ -1,0 +1,51 @@
+
+.gl-ul{margin-top: 2%;padding-left: 0}
+.gl-ul>li:last-child{border-bottom: none}
+.gl-ul>li{
+    border-bottom: 1px solid #ebebeb;overflow: hidden;
+}
+.gl-ul>li{
+    display: block;
+    padding: 2% 0 0 3%;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+.gl-left{
+    width: 30%;height: 70pt;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+.gl-right{
+    width: 65%;height: 70pt;
+    overflow: hidden;margin-left: 10px;
+
+
+}
+.gl-right>h1{
+    font-size: 10pt;
+    color: #000;font-weight: normal;
+}
+.gl-right>ul>li>img{
+    width: 20px;height: 20px;
+}
+.gl-right>ul{
+    width: 100%;
+    position: absolute;
+    top: 30%;padding-left: 0;
+}
+.gl-right>ul>li{
+    float: left;width:24%;overflow: hidden;
+    line-height: 50px;color: #000;
+    margin-left:2px;
+    position: relative;
+    text-align: left;
+}
+.gl-time,.gl-restore,.gl-share{
+    padding-left: 5%;
+    color: #9b9b9b;
+    font-size:9pt;
+    position: absolute;top: 4%;
+
+}
+

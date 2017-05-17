@@ -1,0 +1,27 @@
+body{
+    background-color: #f2f2f2!important;
+}
+.job_section{
+    width: 100%;
+    height:80pt;
+    background-color: #fff;
+    overflow: hidden;margin: 0 auto 2%;
+}
+.job_section>h1,h3{
+    text-align: center;font-size: 10pt;font-weight: normal;
+}
+.job_section>h1{
+    font-size: 12pt;
+    color: #282828;
+    padding-top: 15pt;
+}
+.job_section>h3{
+    padding-top: 10pt;
+    color: #9b9b9b;font-size: 10pt;
+}
+.job_section>h3>span{font-size: 10pt}
+
+.list{padding-top: 5%}
+.list>li{color: #9b9b9b;line-height: 160%}
+.left-part{width: 20%;}
+.right-part{width: 78%;color: #282828}

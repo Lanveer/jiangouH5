@@ -1,0 +1,187 @@
+body{background: #f2f2f2!important;}
+#list{padding-left: 0}
+.list{padding:0;}
+.list>li{color: #282828;line-height: 160%;padding: 8pt 0 8pt 3%!important;margin: 0}
+.left-part{width: 20%;}
+.right-part{width: 78%;}
+.section{
+    margin-bottom: 1.5%;
+}
+.section>h1{
+    padding: 3% 0 3% 3%;
+    font-weight: normal;
+    margin-bottom: 2%;
+    font-size: 10pt;
+    position: relative;
+    /*border-bottom: .1em solid #ebebeb;*/
+}
+.gps{
+    width: 14px;height: 18px;margin-top: -1.5%;
+}
+.arrow{
+    width: 7px;height: 10px;
+    margin: 3.5% 0% 0 0;
+}
+
+.section_item>p{
+    border-bottom: .1em solid #ebebeb;
+    padding: 10pt 0 10pt 5pt;
+}
+
+
+.section>ul{
+    overflow: hidden;
+    margin: 0;
+    padding-left:3%;
+}
+.section>ul>li{
+
+    padding: 5pt 0 5pt 0;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    border-bottom: 1px solid #f2f2f2;
+}
+.section>ul>li:last-child{
+    border-bottom:none;
+}
+
+.section_des{display: flex;flex-direction: row;justify-content: space-between;align-items: center;vertical-align: middle}
+.section_des>h1{font-size: 10pt;font-weight: normal;color: #22d3b9;padding-right: 0pt}
+.ticket{padding-bottom: 10pt}
+.ticket-left{
+    /*width: 10%;*/
+    width: 16pt;height: 16pt;
+    position: relative;
+}
+.ticket-left>span{
+    display: block;
+    position: relative;margin-top: 6%;
+    width:1.5em;height:1.5em;border-radius: 5px;
+    background-color: #22d3b9;color: white;
+    font-size: 10pt;line-height: 17pt;text-align: center;
+}
+.ticket-mid{
+    width: 60%;
+    margin-left: 3%;
+}
+.ticket-mid>h1{
+    padding: 0% 0 1% 0;
+    font-size:10pt;font-weight: normal;
+}
+.ticket-mid>a{
+    color: #8a8989;font-size:9pt;
+}
+.ticket-mid>span{
+    color: #8a8989;font-size:9pt;cursor: pointer;
+}
+/*/*/
+.ticket-right{
+    width: 20%;margin-right: 3%;
+    text-align: center;
+}
+.ticket-right>h3{
+padding-right: 6%;
+    font-size:9pt;font-weight: normal;
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+
+.ticket-right>h2{
+ padding-right: 6%;
+    font-size:12pt;font-weight: normal;
+   margin-top: -5px!important;
+    color: #ff4e00;
+}
+
+
+
+
+
+.ticket-pay{
+    /*clear: right;*/
+    /*width: 75%;height:2em;*/
+    width:40pt;height:20pt;
+    outline: none;
+    border: none;font-size: 11pt;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    background-color: #ff4e00;color: #fff;
+}
+.section .arrow2{
+    width: 7px;height: 10px;
+    margin: 5pt 10pt 0 0;
+}
+
+.tips{
+    width:100%;height:auto;
+    display: none;
+    background: #fff;
+}
+
+.tips-header{
+    width:100%;height: 40pt;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-around;
+}
+.tips-header>img{max-width: 100%;width: 100%;height: 100%;}
+.close{
+    width: 15pt;height: 15pt;
+    display: block;float: left;
+    margin-left: 3%;
+    /*overflow: hidden;*/
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+    line-height: 11pt;text-align: center;
+}
+.close>img{width: 100%;height: 100%}
+
+.tips-header>p{
+    width: 70%;
+    text-align: center;
+}
+.tips-body{
+    width: 100%;
+    padding: 5pt 0 5pt 0;
+}
+.tips-body>h1{
+    font-weight: normal;font-size: 11pt;color: #282828;
+padding: 0 0 2% 3%;
+}
+.tips-body>dl{padding-left: 3%;font-size: 10pt;margin-top: 0}
+.tips-body>dl>dt{font-weight: normal;}
+.tips-body>dl>dd{color: #aeadad}
+
+
+.tips-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100% ;
+    height: 40pt;
+    border-top: .1rem solid #ebebeb;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+}
+
+.total{
+    padding-left: 3%;font-size: 10pt;color: #ff4e00;}
+
+.book-now{
+    width: 50pt;height: 30pt;
+    background: #ff4e00;
+    color: #fff;
+    font-size: 9pt;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    float: right;margin-right: 3%;
+    position: absolute;right: 3%;
+    top: 5pt;
+}

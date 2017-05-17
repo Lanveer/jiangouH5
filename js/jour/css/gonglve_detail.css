@@ -1,0 +1,57 @@
+.gl-detail{
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.gl-guide{
+    width: 100%;height: auto;
+    overflow: hidden;
+    position: relative;
+    /*background: red;*/
+
+}
+.gl_imgs{
+    width: 100%;height:120pt;
+    margin: 2% 0 2% 0;
+}
+.gl_imgs>img{width: 100%;height: 100%;}
+
+
+.gl-guide>h1{
+    position: absolute;left:25pt;
+    top: 0;font-weight: normal;
+    font-size: 11pt;
+}
+.gl-rank{
+    background: url("../../imgs/basic/jour/circle.png");
+    background-repeat: no-repeat;
+    width: 20pt;height:20pt;
+    -webkit-background-size: contain;
+    background-size: contain;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    line-height: 20pt;color: #ff4e00;
+}
+.gl-detail>ul{padding-left: 0;}
+
+.gl-detail>ul>li{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 95%;
+    margin:2% auto;
+}
+.gl-detail>ul>li>h1>img{
+    width: 30px;height: 30px;
+    margin-right: 1%;
+}
+.gl-detail>ul>li>img{
+    /*margin: 2% 0 2% 0;*/
+}
+
+.gl-detail>ul>li>p{
+    font-size: 10pt;
+    color: #8b8989;
+    line-height: 200%;
+}
